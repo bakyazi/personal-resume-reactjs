@@ -60,7 +60,7 @@ function SideNav({ collapsed, toggled, handleToggleSidebar }) {
                     }}
                 >
                     <a
-                        href={person.socialMedia && person.socialMedia.github}
+                        href="https://github.com/bakyazi/personal-resume-reactjs"
                         target="_blank"
                         className="sidebar-btn"
                         rel="noopener noreferrer"

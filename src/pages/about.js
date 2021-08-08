@@ -3,7 +3,6 @@ import {PersonContext} from '../App';
 function About({props, context}) {
 
   const person = useContext(PersonContext);
-  console.log(person)
   return (
     <div className="About">
       <h1 className="pageTitle anim-typewriter" id="parent">ABOUT ME<div id="border"></div></h1>
@@ -23,7 +22,7 @@ function About({props, context}) {
             <li><b>Languages</b>{person.languages && person.languages.join(', ')}</li>
             <li><b>Location</b>{person.location}</li>
           </ul>
-          <button className="btn-primary">Download CV</button>
+          <button className="btn-primary"><a href={person.cvUrl} target='_blank' rel='noopener noreferrer'>Download CV</a></button>
         </div>
 
       </div>

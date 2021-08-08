@@ -7,8 +7,8 @@ function Home() {
 
   return (
     <div className="Home">
-      <h1>Hello, I'm Berkay Akyazı</h1>
-      <h2>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</h2>
+      <h1>Hello, I'm {person.fullName}</h1>
+      <h2>{person.shortBio}</h2>
       <div className="socialMedia">
         <div className="socialMedia-link"><a href={person.socialMedia && person.socialMedia.twitter}><FaTwitter style={{width:'100%', height:'100%'}}/></a></div>
         <div className="socialMedia-link"><a href={person.socialMedia && person.socialMedia.github}><FaGithub style={{width:'100%', height:'100%'}}/></a></div>

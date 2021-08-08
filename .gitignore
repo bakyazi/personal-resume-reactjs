@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /public/data/cv.json
+/public/data/cv.pdf
 
 # testing
 /coverage
