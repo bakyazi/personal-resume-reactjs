@@ -1,0 +1,191 @@
+$sidebar-bg-color: #1d1d1d;
+$submenu-bg-color: rgba(255, 255, 255, 0.05);
+$submenu-bg-color-collapsed: rgba(29, 29, 29, 0.95);
+$sidebar-color: #adadad;
+$highlight-color: #d8d8d8;
+$icon-bg-color: rgba(255, 255, 255, 0.05);
+$icon-size: 35px;
+
+$breakpoint-xs: 480px !default;
+$breakpoint-sm: 576px !default;
+$breakpoint-md: 768px !default;
+$breakpoint-lg: 992px !default;
+$breakpoint-xl: 1200px !default;
+
+// chester pallete
+$cinder-color: #15151e;
+$silver-rust-color: #cfc5c6;
+$azure-rad-color: #087af5;
+$ship-cove-color: #7495b4;
+
+$color1: #1d1d1d;
+$color2: #4a616c;
+$color3: #1c1c1c;
+$color4: #e7c6af;
+$color5: #101010;
+$color6: #1d1d1c;
+
+
+//// resume timeline
+.resume-timeline {
+    width: calc(100% - 30px);
+    padding-left: 30px;
+    padding-bottom: 50px;
+    .title {
+      width: 100%;
+      display: flex;
+      padding-bottom: 20px;
+      position: relative;
+      .titleIcon {
+        width: 50px;
+        color: $azure-rad-color;
+      }
+      .titleText {
+        font-size: 26px;
+        align-self: center;
+        padding-left: 10px;
+        color: white;
+      }
+    }
+    .title::before{
+      content: "";
+      position: absolute;
+      height: 10px;
+      width: 30%;
+      max-width: 100px;
+      transition: 0.3s;
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 5px;
+      left: 0;
+      bottom: 0;
+    }
+    .title::after{
+      content: "";
+      position: absolute;
+      height: 10px;
+      width: 100%;
+      max-width: 300px;
+      transition: 0.3s;
+      background-color: rgba(8, 122, 245, 0.6);
+      border-radius: 5px;
+      left: 0;
+      bottom: 0;
+    }
+    .timeline-items {
+      padding-top: 20px;
+    }
+  }
+  
+  .timeline-item {
+    display: flex;
+    position: relative;
+    padding-left: 28px;
+    .timeline-item-time {
+      width: 30%;
+      max-width: 250px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      .timeline-item-time-start {
+        position: relative;
+        width: 100%;
+      }
+      .timeline-item-time-end {
+        width: 100%;
+      }
+      .timeline-item-time-seperator{
+        display: none;
+      }
+    }
+    .timeline-item-detail {
+      width: 70%;
+      h5 {
+        margin: 0;
+        font-size: 22px;
+        color: white;
+      }
+      h6 {
+        margin-top: 10px;
+        font-size: 16px;
+        color: $ship-cove-color;
+      }
+      p {
+        margin-left: 50px;
+        color: $highlight-color;
+      }
+    }
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    height: calc(100%);
+    width: 5px;
+    transition: 0.3s;
+    background-color: rgba(8, 122, 245, 0.6);
+    left: calc(8px - 2.5px);
+    top: -1px;
+  }
+  
+  .timeline-item-time::after {
+    content: "";
+    position: absolute;
+    height: 0.1px;
+    width: 100px;
+    transition: 0.3s;
+    background-color: rgba(8, 122, 245, 0.3);
+    right: 10px;
+    top: 21px;
+  }
+  
+  .timeline-item-time-start::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #69b6d5;
+    left: -28px;
+    top: 5px;
+  }
+  
+  
+  
+  @media screen and (max-width: $breakpoint-md) {
+    .resume-timeline {
+      padding-left: 0px;
+    }
+    .timeline-item {
+      flex-direction: column;
+      padding-bottom: 15px;
+      .timeline-item-time {
+        flex-direction: row;
+        width: 100%;
+        .timeline-item-time-start,
+        .timeline-item-time-end {
+          width: 50%;
+        }
+        .timeline-item-time-end{
+          padding-left: 10px;
+        }
+        .timeline-item-time-seperator{
+          display: inline;
+        }
+      }
+      .timeline-item-detail{
+        width: 100%;
+        padding-top: 10px;
+        p {
+          margin-left: 25px;
+        }
+      }
+    }
+    .timeline-item-time::after {
+      display: none;
+    }
+  
+  
+  }
+  
