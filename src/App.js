@@ -21,6 +21,7 @@ function App() {
     fetch('data/cv.json').then((r) => r.json())
     .then((data) => {
       setPerson(data);
+      document.title = data.fullName;
     })
   }, []);
 
