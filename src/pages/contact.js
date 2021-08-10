@@ -24,7 +24,7 @@ function Contact() {
             <label>Message</label>
             <textarea name="message" id="contact-form-message" cols="30" rows="8"></textarea>
           </div>
-          <button className="btn-primary">Send Message</button>
+          <button className="btn-primary" onClick={() => {alert("Not implemented yet!")}}>Send Message</button>
         </div>
         <div className="contact-info-cards">
           <div className="contact-info-card">
@@ -36,7 +36,7 @@ function Contact() {
                   Mail
               </div>
               <div className="content">
-                {person.email}
+              <a href={`mailto:${person.email}`}>{person.email}</a>
               </div>
             </div>
           </div>

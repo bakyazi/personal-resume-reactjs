@@ -5,6 +5,8 @@ function Content({ children }) {
     <div className="Content">
       <div className="content-container">
       {children}
+      <div className="content-footer">
+      </div>
       </div>
       <div className="content-bg">
       </div>

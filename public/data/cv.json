@@ -1,0 +1,79 @@
+{
+    "fullName": "Berkay Akyazı",
+    "firstName": "Berkay",
+    "lastName": "Akyazı",
+    "age": 26,
+    "nationality": "Turkish",
+    "email": "berkay.akyazi@gmail.com",
+    "location": "Ankara, TR",
+    "blogUrl": "https://blog.imberkay.com/",
+    "profilePictureUrl": "imgs/profile.jpg",
+    "flatPictureUrl": "imgs/flat.jpg",
+    "languages": [
+        "Turkish",
+        "English"
+    ],
+    "shortBio": "I am a full stack software developer. I love learning new things and using them. I am quick learner. I am developing in mostly Java, Python and React.js, but I am learning Go currently.",
+    "socialMedia": {
+        "twitter": "https://twitter.com/berkyzi",
+        "instagram": "https://instagram.com/berkyzi",
+        "github": "https://github.com/bakyazi",
+        "linkedin": "https://www.linkedin.com/in/berkay-akyaz%C4%B1-a8b56310a/",
+        "telegram": "https://t.me/brrkay"
+    },
+    "cvUrl": "data/cv.pdf",
+    "workExperience": [
+        {
+            "startDate": "Oct 5, 2020",
+            "endDate": "Present",
+            "title": "Software Engineer",
+            "company": "ARGELA Technologies",
+            "description": "Working on multiple projects as a team member. Developing backend in Java(Spring Boot) and network/telecommunication applications in Java and Python."
+        },
+        {
+            "startDate": "Dec 2, 2019",
+            "endDate": "Oct 5, 2020",
+            "title": "Software Engineer",
+            "company": "STM Defence",
+            "description": "I was working on multiple projects as a team member. I mostly developed frontend applications in ReactJS and VueJS. In addition to these, I was designin AWS DynomoDB structure, API Gateway, and developing AWS Lambda functions for API."
+        },
+        {
+            "startDate": "Jul 2, 2018",
+            "endDate": "Dec 2, 2019",
+            "title": "Software Engineer",
+            "company": "ARGELA Technologies",
+            "description": "Working on multiple projects as a team member. Developing backend and network/telecominication applications in Java(Spring Boot)"
+        },
+        {
+            "startDate": "Jun 5, 2017",
+            "endDate": "Sep 29, 2017",
+            "title": "Intern Software Engineer",
+            "company": "BOTT",
+            "description": "Working as an intern, I developed desktop client application to communicate with web services in JavaFX."
+        },
+        {
+            "startDate": "Jul 18, 2016",
+            "endDate": "Sep 2, 2016 ",
+            "title": "Intern Software Engineer",
+            "company": "TAI",
+            "description": "Working as an intern, I developed a C++/OpenCV software to recognizing aircrafts and calculate distance."
+        }
+    ],
+    "education": [
+        {
+            "startDate": "Oct 7, 2013",
+            "endDate": "Jun 16, 2018",
+            "department": "Department of Computer Engineering",
+            "university": "Middle East Technical University",
+            "description": "Programming concepts, Data Structures, Algorithms and etc. I love my University because it taught me a lot. METU Rocks!!"
+        },
+        {
+            "startDate": "2009",
+            "endDate": "2013",
+            "department": "Science",
+            "university": "Ümitköy Anatolian High School",
+            "description": "There is nothing to say so much. It was an ordinary school but I have good memories there."
+        }
+    ]
+    
+}
